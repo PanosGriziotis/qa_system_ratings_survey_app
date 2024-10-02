@@ -1,0 +1,15 @@
+FAQ Completeness t-test results:
+Extractive vs Generative: t-stat=-11.00182662676046, p-value=9.276984073645408e-22
+Extractive vs Response Selector: t-stat=-10.036925127531307, p-value=4.97325676490618e-19
+Generative vs Response Selector: t-stat=1.2917951217373955, p-value=0.19812187084437222
+
+FAQ Factuality t-test results:
+Extractive vs Generative: t-stat=-5.3641862902741515, p-value=2.533439392988903e-07
+Extractive vs Response Selector: t-stat=-5.400011093666794, p-value=2.13548004488174e-07
+Generative vs Response Selector: t-stat=-0.08297398136450407, p-value=0.9339665216520918
+
+FAQ Usefulness t-test results:
+Extractive vs Generative: t-stat=-8.276035352853553, p-value=3.065656046704972e-14
+Extractive vs Response Selector: t-stat=-8.931439078582454, p-value=5.503038139952715e-16
+Generative vs Response Selector: t-stat=-0.420084025208404, p-value=0.6749364680782695
+

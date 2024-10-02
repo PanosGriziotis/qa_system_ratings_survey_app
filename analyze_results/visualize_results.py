@@ -57,7 +57,7 @@ def plot_box_plots(df, category):
     plt.savefig(f"{category}_plot.png")
 
 
-df = load_result_file("./results.csv")
+df = load_result_file("./results_reports.csv")
 # Plot for 'out_of_scope' category
 plot_box_plots(df, 'out_of_scope')
 

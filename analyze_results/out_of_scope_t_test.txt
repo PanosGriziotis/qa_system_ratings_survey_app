@@ -1,0 +1,15 @@
+Out of Scope Completeness t-test results:
+Extractive vs Generative: t-stat=-13.105132086588693, p-value=5.507760436113891e-28
+Extractive vs Response Selector: t-stat=nan, p-value=nan
+Generative vs Response Selector: t-stat=nan, p-value=nan
+
+Out of Scope Factuality t-test results:
+Extractive vs Generative: t-stat=-7.550601355549784, p-value=2.0947524197074972e-12
+Extractive vs Response Selector: t-stat=nan, p-value=nan
+Generative vs Response Selector: t-stat=nan, p-value=nan
+
+Out of Scope Usefulness t-test results:
+Extractive vs Generative: t-stat=-11.620278146306605, p-value=1.1947618297347738e-23
+Extractive vs Response Selector: t-stat=nan, p-value=nan
+Generative vs Response Selector: t-stat=nan, p-value=nan
+

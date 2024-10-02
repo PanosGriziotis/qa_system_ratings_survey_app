@@ -1,0 +1,7 @@
+
+/study_env
+/__pycache__
+static/js/test_out_of_scope_threashod.json
+static/js/test_faq_threashold.json
+analyze_results/new_answers_replacement.py
+old_answers

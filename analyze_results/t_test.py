@@ -83,6 +83,7 @@ def write_t_test_results(file_name, data, aspect):
         f.write(f"Extractive vs Response Selector: t-stat={t_stat2}, p-value={p_val2}\n")
         f.write(f"Generative vs Response Selector: t-stat={t_stat3}, p-value={p_val3}\n\n")
 
+
 # 4. Write FAQ t-test results to 'faq_t_test.txt'
 write_t_test_results('faq_t_test.txt', faq_data, 'FAQ')
 

@@ -23,7 +23,7 @@ def plot_box_plots(df, category):
     aspects = ['completeness', 'factuality', 'usefulness']
     answers = ['answer_1', 'answer_2', 'answer_3']
 
-    fig, axes = plt.subplots(1, 3, figsize=(20, 6), sharey=True)  # Increased figure size
+    fig, axes = plt.subplots(1, 3, figsize=(24, 8), sharey=True)  # Increased figure size
     box_colors = ['skyblue', 'orange', 'green']  # Colors for the box plots
     system_labels = ['Extractive QA', 'Generative QA', 'Response Selector']
 
@@ -55,11 +55,12 @@ def plot_box_plots(df, category):
         for patch, color in zip(box['boxes'], colors):
             patch.set_facecolor(color)
 
-        # Set title and labels
+        # Set title and labels with increased font size
         title = "Overall Usefulness" if aspect == "usefulness" else aspect.capitalize()
-        axes[i].set_title(f'{title}')
+        axes[i].set_title(f'{title}', fontsize=16)  # Increase title font size
+        axes[i].set_ylabel('Ratings', fontsize=14)  # Increase y-axis label font size
+        axes[i].tick_params(axis='both', which='major', labelsize=14)  # Increase tick label size
         axes[i].set_ylim(0.5, 5.9)  # Adjust y-axis to create more space (lower limit 0.5, upper limit 5.7)
-        axes[i].set_ylabel('Ratings')
 
         # Perform t-tests and annotate p-values
         if len(data_to_plot) >= 2:
@@ -77,6 +78,7 @@ def plot_box_plots(df, category):
     plt.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout with tighter spacing
     plt.subplots_adjust(top=0.88, bottom=0.12)  # More space on top and bottom
     plt.savefig(f"{category}_plot_with_pvalues_fixed.png")
+
 
 # Load and plot data
 df = load_result_file("./results_reports.csv")

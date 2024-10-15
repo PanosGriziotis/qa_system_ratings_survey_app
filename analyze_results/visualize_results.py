@@ -62,7 +62,7 @@ def plot_box_plots(df, category):
         axes[i].tick_params(axis='y', which='major', labelsize=16)  # Increase y-axis tick label size
 
         # Set x-axis tick label size (system labels)
-        axes[i].tick_params(axis='x', labelsize=16)  # Increase x-axis tick label (system labels) font size
+        axes[i].tick_params(axis='x', labelsize=18)  # Increase x-axis tick label (system labels) font size
 
         axes[i].set_ylim(0.5, 5.9)  # Adjust y-axis to create more space (lower limit 0.5, upper limit 5.7)
 
